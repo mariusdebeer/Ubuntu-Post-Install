@@ -36,7 +36,7 @@ else
                     echo "Installing Phpmyadmin"
                     apt install phpmyadmin -y
  
-                    echo "Cofiguring apache to run Phpmyadmin"
+                    echo "Configuring apache to run Phpmyadmin"
                     echo "Include /etc/phpmyadmin/apache.conf" >> /etc/apache2/apache2.conf
  
                     echo "Restarting Apache Server"
