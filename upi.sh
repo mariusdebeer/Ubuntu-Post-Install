@@ -13,7 +13,7 @@ else
     options=(1 "LAMP Stack" off
             2 "Essential Utilities - NCDU/HTOP/Terminator" off
             3 "Node.js" off
-            4 "Git" off
+            4 "Snapd" off
             5 "Rocket Chat" off
             6 "JDK 8" off
             7 "Magic Wormhole" off)
@@ -55,12 +55,12 @@ else
                     apt install -y nodejs
                     ;;
                 4)
-                    #Install git
-                    echo "Installing Git, please congiure git later..."
-                    apt install git -y
+                    #Install Snapd
+                    echo "Installing Snapd."
+                    apt install snapd -y
                     ;;
                 5)
-                    #Composer
+                    #Rocketchat
                     echo "Installing Rocket Chat"
                     snap install rocketchat-server -y
                     ;;
